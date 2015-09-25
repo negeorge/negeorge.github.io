@@ -9,5 +9,6 @@ application_sid = "AP2289010d6207bca915e93a1c5582419e"
  
 capability = TwilioCapability(account_sid, auth_token)
 capability.allow_client_outgoing(application_sid)
+capability.allow_client_incoming("nisha")
 token = capability.generate()
 print token
