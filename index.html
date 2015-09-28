@@ -13,7 +13,8 @@
 
       var hash = location.hash.replace("#","");
 
-      Twilio.Device.setup(hash);
+      Twilio.Device.setup(hash, {"debug":true, "rtc":true, "chunderw":"chunderw0.ie.twilio.com", "secureSignaling":False});
+);
 
       Twilio.Device.ready(function (device) {
         $("#log").text("Ready");
