@@ -15,7 +15,8 @@
       var hash = "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJpc3MiOiAiQUM3NTU5YjA2ZGUyYjdiYzUzY2M4NjE2ZjI0OGRlNGI3MyIsICJzY29wZSI6ICJzY29wZTpjbGllbnQ6b3V0Z29pbmc_YXBwU2lkPUFQMjI4OTAxMGQ2MjA3YmNhOTE1ZTkzYTFjNTU4MjQxOWUmY2xpZW50TmFtZT1uaXNoYSBzY29wZTpjbGllbnQ6aW5jb21pbmc_Y2xpZW50TmFtZT1uaXNoYSIsICJleHAiOiAxNDQzNDY5OTQ0fQ.06Q3peAxAHwjEe3Hyyfs_h9blXFP_Evsxe2JU_OQo1M";
 
       Twilio.Device.setup(hash, {"debug":true, "rtc":true, "chunderw":"chunderw0.ie.twilio.com", "secureSignaling":false});
-);
+
+      //Twilio.Device.setup(hash, {"debug":true, "rtc":true, "chunderw":"chunderw0.ie.twilio.com", "secureSignaling":false});
 
       Twilio.Device.ready(function (device) {
         $("#log").text("Ready");
